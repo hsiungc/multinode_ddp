@@ -30,4 +30,4 @@ Due to time constraints, the hyperparameters were determined based on utilizatio
 
 
 [single_instance]: https://github.com/hsiungc/251-hsiungc-hw9/tree/d3f52f2764f2692667435c390355c122b41ade64/single_instance
-[multinode]:
+[multinode]: https://github.com/hsiungc/251-hsiungc-hw9/tree/86285fd70382d8540653ea49ba71b3573afc5637/multinode
