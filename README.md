@@ -1,6 +1,6 @@
 <h1>Multi-Node Distributed Data Parallelism (PyTorch)</h1>
 
-The purpose of this project was to gain exposure to multi-node distributed data parallelism (DDP) using PyTorch's DDP module. Performance on a single-GPU EC2 instance was compared to performance on two single-GPU EC2 instances (DDP).
+The purpose of this project was to gain exposure to multi-node distributed data parallelism using PyTorch's DDP module. Performance on a single-GPU EC2 instance was compared to performance on two single-GPU EC2 instances (DDP).
 
 All comparisons were done using AWS g5.2xlarge instances.
 
