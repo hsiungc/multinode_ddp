@@ -1,9 +1,10 @@
-# 251-hsiungc-hw9
-The purpose of HW9 was to gain exposure to multi-node distributed data parallelism (DDP) using PyTorch's DDP module. Performance on a single-GPU EC2 instance was compared to performance on two single-GPU EC2 instances (DDP).
+<h1>Multi-Node Distributed Data Parallelism (PyTorch)</h1>
+
+The purpose of this project was to gain exposure to multi-node distributed data parallelism (DDP) using PyTorch's DDP module. Performance on a single-GPU EC2 instance was compared to performance on two single-GPU EC2 instances (DDP).
 
 All comparisons were done using AWS g5.2xlarge instances.
 
-## Homework Background
+## Project Background
 ### Single-GPU
 A ResNet18 model was trained and validated on ImageNet images through a Jupyter Lab notebook deployed through a Docker container on a Single-GPU Instance. Both PyTorch Automated Mixed Precision and wandb were implemented. Training was monitored over one epoch using NVIDIA-SMI, and batch size and number of workers were updated to keep GPU utilization at an initial approximation of 95%.
 
@@ -24,10 +25,10 @@ A g2.xlarge EC2 instance is used for extracting the ImageNet data for training a
 EFS was initially used but could not rsync in time. Thus EBS volumes were used instead.
 
 ## Additional Notes
-Since the purpose of this homework was to compare single-GPU and multi-node DDP processes, less attention was given to finetuning and model performance.
+Since the purpose was to compare single-GPU and multi-node DDP processes, less attention was given to finetuning and model performance.
 
 Due to time constraints, the hyperparameters were determined based on utilization from the beginning of training. It was difficult to gauge average GPU utilization early on in the run.  It has been noted that towards the end of the epoch, utilization would drop below 95%.
 
 
-[single_instance]: https://github.com/hsiungc/251-hsiungc-hw9/tree/d3f52f2764f2692667435c390355c122b41ade64/single_instance
-[multinode]: https://github.com/hsiungc/251-hsiungc-hw9/tree/86285fd70382d8540653ea49ba71b3573afc5637/multinode
+[single_instance]: https://github.com/hsiungc/multinode_ddp/tree/4d152ba0dc588197b6669b0e0db5d91136511018/single_instance
+[multinode]: https://github.com/hsiungc/multinode_ddp/tree/4d152ba0dc588197b6669b0e0db5d91136511018/multinode
